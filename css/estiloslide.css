@@ -1,0 +1,128 @@
+/*MARGIN Y PADDING EN 0*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*MAQUETACIÓN EL FLEXBOX*/
+/*Menú*/
+.Contenedor_Menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: RGB(22, 13, 159);
+    margin: 0px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*LOGO DEL MENÚ*/
+.Contenedor_Menu_Logo img{
+    height: 65px;
+    width: 127px;
+}
+
+/*Color para la cinta opciones*/
+nav{
+    display: flex;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    cursor: pointer;
+}
+
+/*Hover para la cinta opciones*/
+nav a:hover{
+    color: yellow;
+}
+
+/*Estilo al boton*/
+.btn_Menu :hover{
+    color: yellow;
+}
+.btn_Menu{
+    margin-right: 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+.swiper { 
+    width: 100%;
+    height: 580px;
+}
+.imagenPrimera{
+    height: 555px;
+    width: 100%;
+    object-fit:cover;
+}
+.show{
+    left: 0;
+}
+/*Media Queries*/
+@media screen and (max-width: 1275px){
+    nav a{
+        display: inline;
+        display: block;
+    }
+
+    /*Menu*/
+    .btn_Menu{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        display: inline;
+    }
+
+    /*Funcion del menu movil*/
+    .opciones_Menu{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(57, 50, 47);
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .4s;
+        z-index: 99;
+    }
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 768px){
+    nav a{
+        display: inline;
+        display: block;
+    }
+
+    /*Menu*/
+    .btn_Menu{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        display: inline;
+    }
+
+    /*Funcion del menu movil*/
+    .opciones_Menu{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(57, 50, 47);
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .4s;
+        z-index: 99;
+    }
+}

@@ -1,0 +1,99 @@
+/* UNIDADES EN CSS
+px,em,%
+em=16px
+4em=64px
+*/
+/*SELECTORES EN CSS
+SELECTOR UNIVERSAL *
+SELECTOR ID        #
+SELECTOR DE CLASE  .
+SELECTOR DE VARIABLE
+SELECTOR DE PARTE
+*/
+/*
+*{
+    background-color: red;
+}
+ METODOLOGIA BEM 
+ BLOCK BLOQUE
+ ELEMENT ELEMENTO
+ MODIFIER MODIFICADOR
+*/
+[variable="titulosecundario"]{
+    color:blue;
+}
+#parrafo1{
+    color:green;
+}
+.titulo1{
+    color:red;
+}
+p{
+    color:orange;
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+}
+h1{
+    text-transform:lowercase;
+    font-family: 'Open Sans', sans-serif;    
+}
+header h2{
+    color:blueviolet;
+}
+.tituloc{
+    color:orange;
+}
+.tituli{
+    color:green;
+}
+img{
+    border-radius: 250px;
+}
+.noticias___parrafo1{
+    width: 350px;
+    height: 150px;
+    background-color: blue;
+    color:white;
+    overflow: hidden;
+    overflow-y:scroll;
+}
+/*Psedeolementos y pseudoclases
+First Line
+Selection
+after
+before
+hover
+*/
+.noticias___parrafo1::after{
+ content:"Hola a todos";
+ background-color: blueviolet;
+ color:#fff;
+}
+.hover-boton{
+ background-color: orange;
+ text-align: center;
+ color:white;
+ font-size: 15px;
+ padding: 20px;
+ margin: 20px;
+ border-radius: 40px;
+ border: none;
+}
+h1{
+    color:yellow;
+}
+.hover-boton:hover{
+ background-color: rgb(56, 54, 54);
+}
+/*UTILIZACION DE MEDIA QUERIES*/
+@media screen and(max-width:767px){
+    h1{
+        color:red;
+    }
+}
+@media screen and(max-width:1024px){
+    h1{
+        color:green;
+    }
+}

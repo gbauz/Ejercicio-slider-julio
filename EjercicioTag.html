@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM CON TAG o etiquetas HTML</title>
+</head>
+<body>
+<h1>Este es un parrafo</h1>  
+</body>
+<script>
+let elementoparrafo=document.getElementsByTagName('h1');
+for(let i=0;i<elementoparrafo.length;i++){
+    elementoparrafo[i].style.color='green';
+    elementoparrafo[i].style.fontSize='45px';
+    elementoparrafo[i].style.fontWeight='bold';
+}
+</script>
+</html>

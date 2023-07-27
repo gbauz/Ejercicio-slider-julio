@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM con ID</title>
+   
+</head>
+<body>
+<h1 id="titulo">Hola soy un titulo</h1>
+<div class="mi-clase">Soy una caja</div>
+</body>
+<script>
+    /*USANDO DOM CON EL ID */
+    let tituloelemento=document.getElementById('titulo');
+    tituloelemento.textContent='Hola soy un titulo personalizado';
+    /*USANDO DOM CON CLASS*/
+    let elementos=document.getElementsByClassName('mi-clase');
+    
+    for(var i=0;i<elementos.length;i++){
+        var elemento=elementos[i];
+        elemento.style.color="RGB(22, 13, 159)";       
+    }
+    </script>
+</html>
